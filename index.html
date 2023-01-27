@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="margin: 0%; padding: 0%;">
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="margin: 0%; padding: 0%;">
+        <div id="rightSidenav">
+            <header class="header_">
+                <button id="closebtn" class="header_button" onclick="closeNav()">&times;</button>
+            </header>
+            <div>
+                <a href="#">О проекте</a>
+                <a href="#">Мишчетотам</a>
+                <a href="#">Тексты</a>
+                <a href="#">Библилпчтототам</a>
+            </div>
+        </div>
+        <header class="header_">
+            <button id="navbtn" class="header_button" onclick="openNav()">open</button>
+        </header>
+        <div id="homediv">
+            <img id="homeimg" src="img/tavern.jpg">
+            <div id="img_text">Websitum pulchrissimum</div>
+        </div>
+        <!-- JavaScripts -->
+        <script>
+            function openNav() {
+              document.getElementById("rightSidenav").style.width = "400px";
+              var btn = document.getElementById("navbtn");
+              btn.style.opacity = 0;
+              btn.style.visibility = "hidden";
+            }
+            
+            function closeNav() {
+              document.getElementById("rightSidenav").style.width = "0";
+              var btn = document.getElementById("navbtn");
+              btn.style.opacity = 1;
+              btn.style.visibility = "visible";
+            }
+        </script>
+    </body>
+</html>
