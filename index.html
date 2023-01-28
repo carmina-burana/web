@@ -1,42 +1,113 @@
 <!DOCTYPE html>
-<html style="margin: 0%; padding: 0%;">
+<html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <style>
+            .full-bg-img {
+                background-image: url(img/tavern.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                filter: brightness(60%);
+            }
+            .text-white {
+                color: white !important;
+                font-family: 'Montserrat', sans-serif;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: black;
+            }
+            .d-flex {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .navbar-nav.flex-column{
+                width: 100%;
+                position: relative;
+                display: flex;
+                right: 0;
+                left: auto;
+            }
+            .nav-link {
+                color: white !important;
+            }
+            .navbar {
+                box-shadow: 17px -17px 2px 19px rgba(0,0,0,1);
+                background-color: black;
+                float: right;
+                width: 200px;
+            }
+            .navbar-toggler {
+                width: 100%;
+            }
+            footer {
+                bottom: 0;
+                width: 100%;
+
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                position: fixed; /* instead of absolute */
+
+                background-color: black;
+                box-shadow: 0px -8px 11px 10px rgba(0,0,0,1);
+            }
+        </style>
     </head>
-    <body style="margin: 0%; padding: 0%;">
-        <div id="rightSidenav">
-            <header class="header_">
-                <button id="closebtn" class="header_button" onclick="closeNav()">&times;</button>
-            </header>
-            <div>
-                <a href="#">О проекте</a>
-                <a href="#">Мишчетотам</a>
-                <a href="#">Тексты</a>
-                <a href="#">Библилпчтототам</a>
+    <body>
+        <div class="full-bg-img"> </div>
+        <div>
+            <nav class="navbar navbar-dark">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse justify-content-end collapse" id="navbarNav">
+                  <ul class="navbar-nav navbar-right flex-column">
+                    <li class="nav-item active">    
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>          
+        </div>            
+        <div class="d-flex align-items-center justify-content-center text-center">
+            <h1 class="text-white text-center display-5">Websitum pulchrissimum</h1>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="text-center text-light">Authors</div>
+                        <p class="text-center text-light">
+                            <a href="https://github.com/JohnDoe">John Doe</a>, 
+                            <a href="https://github.com/JaneJones">Jane Jones</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <header class="header_">
-            <button id="navbtn" class="header_button" onclick="openNav()">open</button>
-        </header>
-        <div id="homediv">
-            <img id="homeimg" src="img/tavern.jpg">
-            <div id="img_text">Websitum pulchrissimum</div>
-        </div>
-        <!-- JavaScripts -->
-        <script>
-            function openNav() {
-              document.getElementById("rightSidenav").style.width = "400px";
-              var btn = document.getElementById("navbtn");
-              btn.style.opacity = 0;
-              btn.style.visibility = "hidden";
-            }
-            
-            function closeNav() {
-              document.getElementById("rightSidenav").style.width = "0";
-              var btn = document.getElementById("navbtn");
-              btn.style.opacity = 1;
-              btn.style.visibility = "visible";
-            }
-        </script>
-    </body>
+        </footer>  
+    </body>   
 </html>
