@@ -1,42 +1,28 @@
 <!DOCTYPE html>
 <html style="margin: 0%; padding: 0%;">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
     <body style="margin: 0%; padding: 0%;">
-        <div id="rightSidenav">
+        <div id="rightSidenav" class="extracted">
             <header class="header_">
                 <button id="closebtn" class="header_button" onclick="closeNav()">&times;</button>
             </header>
             <div>
-                <a href="#">О проекте</a>
-                <a href="#">Мишчетотам</a>
-                <a href="#">Тексты</a>
-                <a href="#">Библилпчтототам</a>
+                <a href="">О проекте</a>
+                <a href="#">Манускрипт</a>
+                <a href="/texts.html">Тексты</a>
+                <a href="#">Библиография</a>
             </div>
         </div>
         <header class="header_">
             <button id="navbtn" class="header_button" onclick="openNav()">open</button>
         </header>
         <div id="homediv">
-            <img id="homeimg" src="img/tavern.jpg">
-            <div id="img_text">Websitum pulchrissimum</div>
+            <div id="img_text">Carmina Burana</div>
         </div>
         <!-- JavaScripts -->
-        <script>
-            function openNav() {
-              document.getElementById("rightSidenav").style.width = "400px";
-              var btn = document.getElementById("navbtn");
-              btn.style.opacity = 0;
-              btn.style.visibility = "hidden";
-            }
-            
-            function closeNav() {
-              document.getElementById("rightSidenav").style.width = "0";
-              var btn = document.getElementById("navbtn");
-              btn.style.opacity = 1;
-              btn.style.visibility = "visible";
-            }
-        </script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>

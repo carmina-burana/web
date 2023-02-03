@@ -1,11 +1,16 @@
-body {
-    background-color: black;
-}
-
 * {
     border: dotted;
-    border-width: 0px;
-    border-color: gray;
+    border-width: 1px;
+    border-color: black;
+}
+
+html { 
+    height: 100%;
+}  
+
+body {
+    height: 100%;
+    background-color: #D8C7AD;
 }
 
 .header_ {
@@ -28,18 +33,24 @@ body {
 
 #homediv {
     text-align: center;
-}
+    height: 100%;
 
+    background: url(img/ks.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+    
 #homeimg {
     width: 100%;
-    filter: brightness(30%);
 }
 
 #img_text {
     position: absolute;
     top: 300px;
     left: 50%;
-    top: 50%;
+    top: 30%;
     transform: translate(-50%);
 
     color: white;
@@ -51,15 +62,16 @@ body {
     height: 100%;
     right: 0;
     width: 0;
+    max-width: 100%!important;
     z-index: 1;
     word-wrap: normal;
     position: fixed!important;
 
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 
-    background-color: black;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 5%);
 }
-  
+
 #rightSidenav a {
     width: 100%;
     display: block;
@@ -75,4 +87,34 @@ body {
 #closebtn {
     width: 100%;
     display: block;
+}
+
+#main {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    height: max-content;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    #main {
+        width: 90%;
+    }
+}
+
+.text-list-button {
+    padding: 5px;
+}
+
+.text-list {
+    display: none;
+}
+
+.active, .text-list-button button:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+ul {
+    margin: 0;
 }
