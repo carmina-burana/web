@@ -1,0 +1,16 @@
+* {
+    border: dotted;
+    border-width: 0px;
+    border-color: black;
+}
+
+body {
+    background-color: #D8C7AD;
+    z-index: 0;
+}
+
+.header_ {
+    height: 30px;
+    padding: 10px;
+    background-color: brown;
+}

@@ -1,0 +1,31 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    #main {
+        width: 90%;
+    }
+}
+
+.text-list-button {
+    padding: 5px;
+}
+
+.text-list {
+    display: none;
+}
+
+.active, .text-list-button button:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+ul {
+    margin: 0;
+}
