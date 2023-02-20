@@ -4,7 +4,6 @@ table {
     font-family: Arial, sans-serif;
 }
 th, td {
-    border: 1px solid #292520;
     width: 50%;
     padding: 10px;
     text-align: left;
