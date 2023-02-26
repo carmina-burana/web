@@ -1,12 +1,20 @@
-#navbtn {
+#nav_open_btn {
     float: right;
     opacity: 1;
     transition-duration: 1s;
 }
 
-.header_button {
-    height: 30px;
-    width: 100px;
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+}
+
+.rotate_m45 {
+    transform: translate(0, 11px) rotate(+45deg);
+}
+.rotate_p45 {
+    transform: translate(0, 11px) rotate(-45deg);
 }
 
 #rightSidenav {
@@ -31,11 +39,14 @@
     color: rgb(240, 158, 91);
 }
 
-#rightSidenav div {
+.side_nav_item {
     padding: 40px;
 }
 
-#closebtn {
-    width: 100%;
+#nav_close_btn {
+    width: 35px;
+    height: 27px;
     display: block;
+    float: right;
+    visibility: hidden;
 }

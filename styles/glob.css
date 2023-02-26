@@ -4,6 +4,10 @@
     border-color: black;
 }
 
+a {
+    text-decoration:none
+}
+
 body {
     background-color: #D8C7AD;
     z-index: 0;

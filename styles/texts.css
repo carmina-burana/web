@@ -1,3 +1,20 @@
 td {
     width: 70px;
 }
+
+.text-list-button {
+    padding: 5px;
+    font-size: larger;
+}
+
+.text-list {
+    display: none;
+}
+
+.active, .text-list-button:hover {
+    background-color: #b3966a;
+}
+
+ul {
+    margin: 0;
+}

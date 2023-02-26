@@ -10,21 +10,29 @@
     <body style="margin: 0%; padding: 0%;">
         <div id="rightSidenav" class="extracted">
             <header class="header_">
-                <button id="closebtn" class="header_button" onclick="closeNav()">&times;</button>
+                <div id="nav_close_btn" onclick="closeNav()">
+                    <div class="bar"></div>
+                    <div class="bar" style="margin: 6px 0;"></div>
+                    <div class="bar"></div>
+                </div>
             </header>
-            <div>
-                <a href="#">О проекте</a>
+            <div class="side_nav_item">
+                <a href="">О проекте</a>
                 <a href="#">Манускрипт</a>
                 <a href="/xenia-web/texts.html">Тексты</a>
                 <a href="#">Библиография</a>
             </div>
         </div>
         <header class="header_">
-            <button id="navbtn" class="header_button" onclick="openNav()">open</button>
+            <div id="nav_open_btn" class="header_button" onclick="openNav()">
+                <div class="bar"></div>
+                <div class="bar" style="margin: 6px 0;"></div>
+                <div class="bar"></div>
+            </div>
         </header>
         <div id="main">
             <!-- Carmina moralia et satirica -->
-            <div class="text-list-button"><button onclick="toggleList('li1')">Carmina moralia et satirica</button></div>
+            <div class="text-list-button" onclick="toggleList('li1')">Carmina moralia et satirica</div>
             <div class="text-list" id="li1">
                 <table>
                     <tr>    
@@ -118,7 +126,7 @@
                 </table>
             </div>
             <!-- Carmina amatoria -->
-            <div class="text-list-button"><button onclick="toggleList('li2')">Carmina amatoria</button></div>
+            <div class="text-list-button" onclick="toggleList('li2')">Carmina amatoria</div>
             <div class="text-list" id="li2">
                 <table>
                     <tr>
@@ -387,7 +395,7 @@
                 </table>
             </div>
             <!-- Carmina potoria -->
-            <div class="text-list-button"><button onclick="toggleList('li3')">Carmina potoria</button></div>
+            <div class="text-list-button" onclick="toggleList('li3')">Carmina potoria</div>
             <div class="text-list" id="li3">
                 <table>
                     <tr>
@@ -455,7 +463,7 @@
                 </table>
             </div>
             <!-- Ludi -->
-            <div class="text-list-button"><button onclick="toggleList('li4')">Ludi</button></div>
+            <div class="text-list-button" onclick="toggleList('li4')">Ludi</div>
             <div class="text-list" id="li4">
                 <table>
                     <tr>
@@ -465,7 +473,7 @@
                 </table>
             </div>
             <!-- Supplementum -->
-            <div class="text-list-button"><button onclick="toggleList('li5')">Supplementum</button></div>
+            <div class="text-list-button" onclick="toggleList('li5')">Supplementum</div>
             <div class="text-list" id="li5">
                 <table>
                     <tr>
@@ -510,7 +518,7 @@
                 </table>
             </div>
             <!-- Fragmenta -->
-            <div class="text-list-button"><button onclick="toggleList('li6')">Fragmenta</button></div>
+            <div class="text-list-button" onclick="toggleList('li6')">Fragmenta</div>
             <div class="text-list" id="li6">
                 <ul>
                     <li><a href=>Empty</a></li>
