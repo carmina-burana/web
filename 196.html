@@ -10,17 +10,25 @@
     <body style="margin: 0%; padding: 0%;">
         <div id="rightSidenav" class="extracted">
             <header class="header_">
-                <button id="nav_close_btn" class="header_button" onclick="closeNav()">&times;</button>
+                <div id="nav_close_btn" onclick="closeNav()">
+                    <div class="bar"></div>
+                    <div class="bar" style="margin: 6px 0;"></div>
+                    <div class="bar"></div>
+                </div>
             </header>
-            <div>
-                <a href="#">О проекте</a>
+            <div class="side_nav_item">
+                <a href="">О проекте</a>
                 <a href="#">Манускрипт</a>
                 <a href="/web/texts.html">Тексты</a>
                 <a href="#">Библиография</a>
             </div>
         </div>
         <header class="header_">
-            <button id="nav_open_btn" class="header_button" onclick="openNav()">open</button>
+            <div id="nav_open_btn" class="header_button" onclick="openNav()">
+                <div class="bar"></div>
+                <div class="bar" style="margin: 6px 0;"></div>
+                <div class="bar"></div>
+            </div>
         </header>
         <div id="main">
             <h2>196</h2>
