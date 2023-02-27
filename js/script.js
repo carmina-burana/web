@@ -14,10 +14,12 @@ function closeNav() {
 }
 function toggleList(id) {
     var elem = document.getElementById(id);
-    console.log(elem)
+    var btn = elem.previousElementSibling;
     if (elem.style.display == "block") {
         elem.style.display = "none"
+        btn.classList.remove('active')
         return;
     }
     elem.style.display = "block"
+    btn.classList.add('active')
 }

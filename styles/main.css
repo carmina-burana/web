@@ -1,15 +1,30 @@
+body {
+    background-image: url(img/new.jpeg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
 #main {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    max-width: 100%;
-    margin: auto;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 700px;
+    width: 500px;
+    margin-inline: auto;
+
+    min-height: 100%;
+}
+
+#main-parent {
+    width: 700px;
+    max-width: 100%;
+    margin-inline: auto;
+
+    height: 100%;
+
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(179,150,106,1) 7%, rgba(179,150,106,1) 93%, rgba(255,255,255,0) 100%);
 }
 
 @media screen and (max-width: 600px) {
-    #main {
-        width: 90%;
+    #main-parent {
+        width: 100%;
     }
 }

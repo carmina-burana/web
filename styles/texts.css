@@ -5,6 +5,7 @@ td {
 .text-list-button {
     padding: 5px;
     font-size: larger;
+    color: black;
 }
 
 .text-list {
@@ -12,7 +13,9 @@ td {
 }
 
 .active, .text-list-button:hover {
-    background-color: #b3966a;
+    background-color: #22190c;
+    color: wheat;
+    cursor: pointer;
 }
 
 ul {
