@@ -9,7 +9,7 @@
     text-align: center;
     height: 100%;
 
-    background: url(img/new.jpeg) no-repeat center center; 
+    background: url(img/new.jpeg) no-repeat center 33%; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -24,14 +24,14 @@
     position: absolute;
     top: 300px;
     left: 50%;
-    top: 30%;
+    top: 45%;
     transform: translate(-50%);
     min-width: 90%;
 
     color: white;
     font-family: 'Tabula Burana';
     text-shadow: 7px 5px 6px #000;
-    font-size: 30pt;
+    font-size: 50pt;
 }
 
 @media screen and (max-width: 500px) {
