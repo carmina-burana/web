@@ -9,7 +9,7 @@
     text-align: center;
     height: 100%;
 
-    background: url(img/new.jpeg) no-repeat center 33%; 
+    background: url(img/new.jpeg) no-repeat center 33%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -32,6 +32,23 @@
     font-family: 'Tabula Burana';
     text-shadow: 7px 5px 6px #000;
     font-size: 50pt;
+}
+
+#about_us {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%);
+    min-width: 90%;
+
+    color: white;
+    text-shadow: 7px 5px 6px #000;
+    
+    background-color: rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 20px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 16px 20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px 20px rgba(0,0,0,0.75);
 }
 
 @media screen and (max-width: 500px) {

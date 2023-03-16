@@ -1,0 +1,45 @@
+h2 {
+    font-size: 20pt;
+
+    margin: 0;
+}
+
+p {
+    font-size: 14pt;
+}
+
+#textbox {
+    margin-inline: auto;
+    width: 70%;
+    height: 100%;
+    text-align: justify;
+    color: white;
+    text-indent: 70px;
+
+    padding: 25px;
+}
+
+#about_main_div {
+    background: 
+        url(img/new_loong.jpeg);
+    background-size: 100%;
+
+    min-height: 900px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+
+    text-shadow: 7px 5px 6px #000;
+
+    padding-top: 150px;
+}
+
+.email {
+    color: white;
+    text-decoration-line: underline;
+}
+
+a:hover {
+    color: #ce862e;
+    cursor: pointer;
+    text-decoration-line: none;
+}

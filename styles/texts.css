@@ -2,19 +2,35 @@ td {
     width: 70px;
 }
 
+#textsdiv {
+    background: 
+        url(img/new_loong.jpeg);
+    background-size: 100%;
+
+    min-height: 500px;
+    padding-bottom: 200px;
+    padding-top: 50px;
+
+    text-shadow: 7px 5px 6px #000;
+}
+
 .text-list-button {
     padding: 5px;
-    font-size: larger;
-    color: black;
+    font-size: 25pt;
+    color: white;
+}
+
+td a {
+    color: white;
+    font-size: 20pt;
 }
 
 .text-list {
     display: none;
 }
 
-.active, .text-list-button:hover {
-    background-color: #22190c;
-    color: wheat;
+.active, .text-list-button:hover, td a:hover {
+    color: #ce862e;
     cursor: pointer;
 }
 
