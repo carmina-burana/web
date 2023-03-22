@@ -7,8 +7,7 @@ td {
         url(img/new_loong.jpeg);
     background-size: 100%;
 
-    min-height: 500px;
-    padding-bottom: 200px;
+    padding-bottom: 100%;
     padding-top: 50px;
 
     text-shadow: 7px 5px 6px #000;
