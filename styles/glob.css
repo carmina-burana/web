@@ -1,12 +1,19 @@
+@font-face {
+    font-family: "SchoolBook";
+    src: url('fonts/SchoolBookC.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     border: dotted;
     border-width: 0px;
     border-color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "SchoolBook";
 }
 
 a {
-    text-decoration:none
+    text-decoration:none;
 }
 
 body {

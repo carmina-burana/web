@@ -1,20 +1,65 @@
+@font-face {
+    font-family: "SchoolBook";
+    src: url('fonts/SchoolBookC.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 table {
+    margin-top: 20px;
     width: 100%;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
+    font-family: 'SchoolBook'!important;
 }
 th, td {
     width: 50%;
     padding: 10px;
     text-align: left;
+    vertical-align: top;
     font-size: 17px;
 }
 th {
-    background-color: #977f5a;
-    font-weight: bold;
+    font-size: 16pt;
+    font-weight: bolder;
 }
-tr:hover {
-    background-color: #bda582;
+td {
+    font-size: 16pt;
+}
+
+.comentary td {
+    text-align: justify;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+.shit {
+    color: red;
+    font-size: 20pt;
+    background-color: blue;
+}
+
+.bibliography {
+    padding-left: 70px;
+    text-indent: -70px;
+}
+
+a:hover {
+    color: #ce862e;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+p {
+    margin: 0;
+    font-size: 16pt;
+    line-height: 1.5;
+    font-family: 'SchoolBook';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'SchoolBook';
 }
 
 #textbox {

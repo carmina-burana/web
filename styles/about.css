@@ -5,7 +5,9 @@ h2 {
 }
 
 p {
-    font-size: 14pt;
+    font-size: 16pt;
+    line-height: 1.5;
+    margin: 0;
 }
 
 #textbox {

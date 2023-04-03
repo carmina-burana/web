@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "SchoolBook";
+    src: url('fonts/SchoolBookC.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #nav_open_btn {
     width: 35px;
     height: 27px;
@@ -68,8 +75,8 @@
     font-size: large;
     color: white;
 
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25pt;
+    font-family: 'SchoolBook';
+    font-size: 21pt;
 
     text-align: right;
     text-shadow: 4px 2px 2px #000;
