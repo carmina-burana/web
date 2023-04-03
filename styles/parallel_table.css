@@ -16,3 +16,28 @@ th {
 tr:hover {
     background-color: #bda582;
 }
+
+#textbox {
+    margin-inline: auto;
+    width: 70%;
+    height: 100%;
+    text-align: justify;
+    color: white;
+    text-indent: 70px;
+
+    padding: 25px;
+}
+
+#main_div {
+    background: 
+        url(img/text_duo_blurred.jpg);
+    background-size: 100%;
+
+    min-height: 900px;
+    padding-bottom: 30%;
+    padding-top: 50px;
+
+    text-shadow: 7px 5px 6px #000;
+
+    padding-top: 150px;
+}
