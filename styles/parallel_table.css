@@ -67,6 +67,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'SchoolBook';
 }
 
+.prose td {
+    text-align: justify;
+}
+
 #textbox {
     margin-inline: auto;
     width: 70%;
@@ -90,4 +94,37 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 7px 5px 6px #000;
 
     padding-top: 150px;
+}
+
+.ul_clean{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.li_1::before {
+    content: "1. ";
+}
+.li_2a::before {
+    content: "2a. ";
+    margin-left: -10px;
+}
+.li_2b::before {
+    content: "2b. ";
+    margin-left: -10px;
+}
+.li_3a::before {
+    content: "3a. ";
+    margin-left: -10px;
+}
+.li_3b::before {
+    content: "3b. ";
+    margin-left: -10px;
+}
+.li_4a::before {
+    content: "4a. ";
+    margin-left: -10px;
+}
+.li_4b::before {
+    content: "4b. ";
+    margin-left: -10px;
 }
