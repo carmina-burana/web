@@ -16,6 +16,10 @@
     margin-top: 10px;
 }
 
+.nav_bth:hover .bar {
+    background-color: #ce862e;
+}
+
 .bar {
     width: 35px;
     height: 5px;
