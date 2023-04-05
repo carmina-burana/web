@@ -80,6 +80,8 @@
 
     text-align: right;
     text-shadow: 4px 2px 2px #000;
+
+    text-decoration:none;
 }
 
 #rightSidenav a:hover {

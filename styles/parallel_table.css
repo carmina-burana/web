@@ -40,6 +40,11 @@ a {
     background-color: blue;
 }
 
+.backlink {
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .bibliography {
     padding-left: 70px;
     text-indent: -70px;

@@ -13,6 +13,10 @@ td {
     text-shadow: 7px 5px 6px #000;
 }
 
+#textsdiv a {
+    text-decoration: none;
+}
+
 .text-list-button {
     padding: 5px;
     font-size: 25pt;
