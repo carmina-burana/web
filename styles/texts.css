@@ -14,7 +14,7 @@ td {
 }
 
 .disabled {
-    color: gray;
+    color: gray!important;
     pointer-events: none;
     cursor: default;
     text-decoration: none;
