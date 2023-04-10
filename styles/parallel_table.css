@@ -17,6 +17,7 @@ th, td {
     text-align: left;
     vertical-align: top;
     font-size: 17px;
+    padding-left: 0;
 }
 th {
     font-size: 16pt;
@@ -24,6 +25,13 @@ th {
 }
 td {
     font-size: 16pt;
+}
+.clear_marpad {
+    padding: 0;
+    margin: 0;
+}
+.verse_list {
+    margin-left: 25px;
 }
 
 .comentary td {
@@ -127,4 +135,9 @@ h1, h2, h3, h4, h5, h6 {
 .li_4b::before {
     content: "4b. ";
     margin-left: -10px;
+}
+.CB188_shift {
+    margin: 0;
+    padding: 0;
+    margin-left: 78px;
 }
