@@ -141,3 +141,27 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin-left: 78px;
 }
+
+.no-td-padding td {
+    padding: 0;
+}
+
+.line-any::before {
+    content: "    ";
+    margin-left: 25px;
+}
+.line-5::before {
+    content: "5. ";
+}
+.line-10::before {
+    content: "10. ";
+    margin-left: -15px;
+}
+.line-15::before {
+    content: "15. ";
+    margin-left: -15px;
+}
+.line-20::before {
+    content: "20. ";
+    margin-left: -15px;
+}
