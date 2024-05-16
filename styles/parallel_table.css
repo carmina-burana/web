@@ -58,6 +58,11 @@ a {
     text-indent: -70px;
 }
 
+.image-box img {
+    width: 70%;
+    max-width: 500px;
+}
+
 a:hover {
     color: #ce862e;
     cursor: pointer;
