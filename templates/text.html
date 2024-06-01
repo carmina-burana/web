@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html style="margin: 0%; padding: 0%; height: 100%;">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/glob.css">
+        <link rel="stylesheet" href="../styles/nav.css">
+        <link rel="stylesheet" href="../styles/parallel_table.css">
+    </head>
+    <body style="margin: 0%; padding: 0%;">
+        <div id="rightSidenav" class="extracted">
+            <header id="nav_header">
+                <div id="nav_close_btn" class="nav_bth" onclick="closeNav()">
+                    <div class="bar"></div>
+                    <div class="bar" style="margin: 6px 0;"></div>
+                    <div class="bar"></div>
+                </div>
+            </header>
+            <div id="side_nav_item">
+                <a href="../">Главная</a>
+                <a href="../about.html">О проекте</a>
+                <a href="">Манускрипт</a>
+                <a href="../texts.html">Тексты</a>
+                <a href="#">Библиография</a>
+            </div>
+        </div>
+        <div id="nav_open_btn" class="nav_bth" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar" style="margin: 6px 0;"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="main_div">
+            <div class="shadowboxed" id="textbox">
+                <h1>{{ data['text_num'] }}</h1>
+                <h2>О тексте</h2>
+                {% for p in data['about'] -%}
+                <p>{{ p }}</p>
+                {% endfor %}
+                <br>
+                <h2>Перевод</h2>
+                <table>
+                    {% for ver in data['verses'] -%}
+                    {% set block = ver[0][0].split('.')[0] %}
+                    <tr>
+                        <td id="{{ block }}_block">
+                            {% for line in ver[0] -%}
+                            {{ line }}<br>
+                            {% endfor %}
+                        </td>
+                        <td>
+                            {% for line in ver[1] -%}
+                            {{ line }}<br>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <h2>Комментарий</h2>
+                <table class="comentary">
+                    {% for cit, num, text in data['commentary'] -%}
+                    <tr id="{{ num['num'] | replace('–', '-') }}_comment">
+                        <td><a class="backlink" href="#{{ num['verse'] }}_block">↑</a> {{ num['num'] }} {%- if cit -%}<i> {{ cit }} </i>{%- endif -%}</td>
+                        <td>
+                            {% for p in text -%}
+                            <p>
+                                {% for line in p -%}
+                                {{ line }}<br>
+                                {% endfor %}
+                            </p>
+                            <br>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <h2>Библиография</h2>
+                {% for bib in data['bib'] -%}
+                <p class="bibliography">
+                    {{ bib }} 
+                </p>
+                {% endfor %}
+                <br><br>
+                <p>
+                    <i>{{ data['names'] }}</i>
+                </p>
+                <p>
+                    <i>{{ data['year'] }}</i>
+                </p>
+            </div>
+            <div>
+                <img class="hse-img" src="../styles/img/Logo_HSE_full_rus_for_dark/01_Logo_HSE_full_rus_CMYK_for_dark_1.svg">
+            </div>
+        </div>
+        <!-- JavaScripts -->
+        <script type="text/javascript" src="../js/script.js"></script>
+    </body>
+</html>
