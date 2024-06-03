@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html style="margin: 0%; padding: 0%; height: 100%;">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/glob.css">
+        <link rel="stylesheet" href="../styles/nav.css">
+        <link rel="stylesheet" href="../styles/parallel_table.css">
+        <style>
+            .custom-table {
+                max-width: 80%;
+                border: 1px solid;
+                margin: auto;
+            }
+            .custom-cell {
+                border: 1px solid;
+                padding-left: 7px;
+            }
+        </style>
+    </head>
+    <body style="margin: 0%; padding: 0%;">
+        <div id="rightSidenav" class="extracted">
+            <header id="nav_header">
+                <div id="nav_close_btn" class="nav_bth" onclick="closeNav()">
+                    <div class="bar"></div>
+                    <div class="bar" style="margin: 6px 0;"></div>
+                    <div class="bar"></div>
+                </div>
+            </header>
+            <div id="side_nav_item">
+                <a href="../">Главная</a>
+                <a href="../about.html">О проекте</a>
+                <a href="">Манускрипт</a>
+                <a href="../texts.html">Тексты</a>
+                <a href="#">Библиография</a>
+            </div>
+        </div>
+        <div id="nav_open_btn" class="nav_bth" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar" style="margin: 6px 0;"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="main_div">
+            <div class="shadowboxed" id="textbox">
+                <h1>200</h1>
+                <h2>О тексте</h2>
+                <p>CB200 — анонимная латинская песня, известная только по рукописи «Carmina Burana», где она располагается на листе 89r. Основному тексту предшествует заголовок «Item Ał» («И другой в таком же роде»), написанный красными чернилами [Hilka, Schumann, Bischoff 1970: 42]. Верхней границей написания стихотворения является дата создания манускрипта (1230–1235 гг.). Песня написана силлабическими двустишиями (тринадцатисложник с цезурой после седьмого слога) с парной рифмовкой, после каждой строфы следует припев.</p>
+                <p>CB200 обращена к богу виноделия Вакху. Стихотворение встраивается в античную традицию дифирамбов — гимнов, исполнявшихся хором в честь бога Диониса (Вакха) на Великих Дионисиях и Ленеях. И в античной, и в средневековой традициях Вакх — это бог, который помогает в любовных делах, смиряет душевные тревоги и наделяет человека красноречием. В поэзии Вакх еще со времен Античности зачастую выступает метонимической заменой вина: в нашем тексте имя Вакха в куплетах и слово «вино» в припевах тождественны друг другу, что является устойчивым приемом для всего «Буранского сборника» [Traill 2018: 686].</p>
+                <p>К Средним векам сформировалась традиция отмечать в начале осени праздник сбора винограда (vendange) [Бахтин 1990: 9], известная и сейчас. Кроме того, существовали и другие мероприятия подобного толка. Так, день Святого Мартина (11 ноября), покровителя виноделов, которому традиционно приписывают достижения, связанные с этим искусством (например, одомашнивание дикого винограда в Турени и посадку первого виноградника сорта Вуврэ), был также негласным праздником первого, молодого вина [Estreicher 2023: 99, 110]. М. М. Бахтин отмечает, что подобные сельскохозяйственные праздники становились ареной для карнавального церемониала [Бахтин 1990: 9], в эстетику которого встраивается и CB200: слово «prelibantes» в предпоследней строфе, образованное от глагола «prelibo» («заранее пробовать, отведывать»), намекает на то, что рассматриваемый гимн как раз был приурочен к появлению первого вина текущего года и празднованию, устроенному в честь этого события.</p>
+                <p>В «Буранском сборнике» CB200 имеет тринадцать строф (без учета припева), но и Б. Бишофф (создатель первого критического издания рукописи), и Д. А. Трейлл (автор наиболее современного академического издания) исключают три строфы (в манускрипте это строфы 2–4), которые, с их точки зрения, выбиваются из остального текста, поскольку имеют другую структуру:</p>
+                <br>
+                <table class="custom-table">
+                    <tr>
+                        <td class="custom-cell">
+                            Iste scyphus concavus,<br>
+                            de bono mero profluus<br>
+                            si quis bibit sepius,<br>
+                            satur fit et ebrius.
+                        </td>
+                        <td class="custom-cell">
+                            Эта изогнутая чаша,<br>
+                            наполненная до краев хорошим крепким вином,<br>
+                            насыщает и опьяняет того,<br>
+                            кто часто к ней прикладывается.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="custom-cell">
+                            Hec sunt vasa regia,<br>
+                            quibus spoliatur<br>
+                            Ierusalem et regalis<br>
+                            Babylon ditatur.
+                        </td>
+                        <td class="custom-cell">
+                            Вот царские сосуды,<br>
+                            которые грабят<br>
+                            Иерусалим и обогащают<br>
+                            царственный Вавилон.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="custom-cell">
+                            Ex hoc scypho, conscii,<br>
+                            bibent sui domini<br>
+                            bibent sui socii,<br>
+                            bibent et amici [Hilka, Schumann, Bischoff 1970: 43].
+                        </td>
+                        <td class="custom-cell">
+                            Из этой чаши, друзья,<br>
+                            будут пить ее хозяева,<br>
+                            будут пить их знакомые,<br>
+                            будут пить и их приятели.
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <p>Интересно, что третья по счету строфа в манускрипте представляет собой дословную цитату из литургической драмы «Действо о Данииле» («Ludus Danielis») [Hilka, Schumann, Bischoff 1970: 43], созданной анонимным автором, который был учеником при соборной школе в Бове. Нотированная рукопись, содержащая эту драму, датируется 1220–1230 гг. и хранится в Британской библиотеке (Egerton MS 2625) [Rossell 2012: 19]. Исследователь Э. Россел предпринял попытку реконструировать мелодию CB200 по входящей в текст цитате из литургической драмы. Кроме того, у нас есть и другие свидетельства обращения к этой пьесе в «Carmina Burana»: Дж. Бобет считает, что CB196 также представляет собой контрафакт на «Действо о Данииле» [Bobeth 2015: 97], что в сумме позволяет сделать вывод о популярности этой пьесы в ученой среде первой трети XIII в.</p>
+                <p>Сегодня гимн популярен у групп, которые пишут музыку к средневековым текстам. Так, исполнители Oni Wytars Ensemble & Unicorn Ensemble взяли текст CB200 за основу композиции из альбома 2002 г. «Святые и грешники — Музыка Европы Средневековья и Возрождения» («Saints and Sinners — The Music of Medieval and Renaissance Europe»). Кроме того, музыкальное сопровождение к тексту создавала также группа Artefactum, причем в песню вошли даже те три строфы, которые издатели обычно исключают.</p>
+                <br>
+                <h2>Перевод</h2>
+                <table>
+                    <tr>
+                        <td id="1_block">
+                            1. Bacche, bene venies, gratus et optatus,<br>
+                            per quem noster animus fit letificatus.<br>
+                        </td>
+                        <td>
+                            Вакх, добро пожаловать, ты приятный и желанный гость,<br>
+                            которому радуется наша душа. <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Ref_block">
+                            Ref. Istud vinum, bonum vinum, vinum generosum,<br>
+                            reddit virum curialem, probum, animosum.<br>
+                        </td>
+                        <td>
+                            Припев. Это вино, хорошее вино, благородное вино,<br>
+                            делает мужчину учтивым, порядочным и смелым.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="2_block">
+                            2. Bacchus, forte superans pectora virorum,<br>
+                            in amorem concitat animos eorum.<br>
+                        </td>
+                        <td>
+                            2. Вакх, овладевая порой сердцами мужчин,<br>
+                            Побуждает их души к любви.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Ref_block">
+                            Ref. Istud vinum, bonum vinum, vinum generosum,<br>
+                            reddit virum curialem, probum, animosum.<br>
+                        </td>
+                        <td>
+                            Припев. Это вино, хорошее вино, благородное вино,<br>
+                            делает мужчину учтивым, порядочным и смелым.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="3_block">
+                            3. Bacchus, sepe visitans mulierum genus,<br>
+                            facit eas subditas tibi, o tu Venus. <br>
+                        </td>
+                        <td>
+                            3. Вакх часто посещает род женский<br>
+                            и подчиняет его тебе, о Венера. <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Ref_block">
+                            Ref. Istud vinum, bonum vinum, vinum generosum,<br>
+                            reddit virum curialem, probum, animosum.<br>
+                        </td>
+                        <td>
+                            Припев. Это вино, хорошее вино, благородное вино,<br>
+                            делает мужчину учтивым, порядочным и смелым.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="4_block">
+                            4. Bacchus, venas penetrans calido liquore,<br>
+                            <a href="#4.2_comment">facit eas igneas Veneris ardore</a>. <br>
+                        </td>
+                        <td>
+                            4. Вакх, струясь по венам жгучим напитком, <br>
+                            разжигает в женщинах Венерино пламя. <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Ref_block">
+                            Ref. Istud vinum, bonum vinum, vinum generosum,<br>
+                            reddit virum curialem, probum, animosum.<br>
+                        </td>
+                        <td>
+                            Припев. Это вино, хорошее вино, благородное вино,<br>
+                            делает мужчину учтивым, порядочным и смелым.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="5_block">
+                            5. Bacchus, <a href="#5.1_comment">lenis</a> leniens curas et dolores,<br>
+                            confert iocum, gaudia, risus et amores.<br>
+                        </td>
+                        <td>
+                            5. Вакх, мягко успокаивая тревоги и горе,<br>
+                            Приносит веселье, радость, смех и любовь.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Ref_block">
+                            Ref. Istud vinum, bonum vinum, vinum generosum,<br>
+                            reddit virum curialem, probum, animosum.<br>
+                        </td>
+                        <td>
+                            Припев. Это вино, хорошее вино, благородное вино,<br>
+                            делает мужчину учтивым, порядочным и смелым.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="6_block">
+                            6. Bacchus mentem femine solet hic lenire,<br>
+                            cogit eam citius <a href="#6.2_comment">viro consentire</a>.<br>
+                        </td>
+                        <td>
+                            6. Вакх зачастую усыпляет разум женщины,<br>
+                            заставляя ее скорее дать согласие мужчине. <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Ref_block">
+                            Ref. Istud vinum, bonum vinum, vinum generosum,<br>
+                            reddit virum curialem, probum, animosum.<br>
+                        </td>
+                        <td>
+                            Припев. Это вино, хорошее вино, благородное вино,<br>
+                            делает мужчину учтивым, порядочным и смелым.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="7_block">
+                            7. Bacchus illam facile solet expugnare,<br>
+                            a qua prorsus coitum nequit impetrare.<br>
+                        </td>
+                        <td>
+                            7. Вакх подчиняет легко даже ту,<br>
+                            от которой иначе не добиться близости.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Ref_block">
+                            Ref. Istud vinum, bonum vinum, vinum generosum,<br>
+                            reddit virum curialem, probum, animosum.<br>
+                        </td>
+                        <td>
+                            Припев. Это вино, хорошее вино, благородное вино,<br>
+                            делает мужчину учтивым, порядочным и смелым.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="8_block">
+                            8. Bacchus — numen, faciens hominem iocundum,<br>
+                            reddit eum pariter doctum et facundum.<br>
+                        </td>
+                        <td>
+                            8. Вакх — божество, которое помогает человеку веселиться<br>
+                            и вместе с тем наделяет его ученостью и красноречием.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Ref_block">
+                            Ref. Istud vinum, bonum vinum, vinum generosum,<br>
+                            reddit virum curialem, probum, animosum.<br>
+                        </td>
+                        <td>
+                            Припев. Это вино, хорошее вино, благородное вино,<br>
+                            делает мужчину учтивым, порядочным и смелым.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="9_block">
+                            9. Bacche, deus inclite, omnes, hic astantes,<br>
+                            leti sumus munera tua prelibantes.<br>
+                        </td>
+                        <td>
+                            9. Вакх, прославленный бог, все мы, собравшиеся здесь,<br>
+                            Рады первыми пробовать твои дары.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Ref_block">
+                            Ref. Istud vinum, bonum vinum, vinum generosum,<br>
+                            reddit virum curialem, probum, animosum.<br>
+                        </td>
+                        <td>
+                            Припев. Это вино, хорошее вино, благородное вино,<br>
+                            делает мужчину учтивым, порядочным и смелым.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="10_block">
+                            10. Omnes tibi canimus maxima preconia,<br>
+                            te laudantes merito tempora per omnia.<br>
+                        </td>
+                        <td>
+                            10. Мы воздаем тебе всякую хвалу<br>
+                            и заслуженно прославляем тебя на все времена.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Ref_block">
+                            Ref. Istud vinum, bonum vinum, vinum generosum,<br>
+                            reddit virum curialem, probum, animosum.<br>
+                        </td>
+                        <td>
+                            Припев. Это вино, хорошее вино, благородное вино,<br>
+                            делает мужчину учтивым, порядочным и смелым.<br>
+                        </td>
+                    </tr>
+                </table>
+                <h2>Комментарий</h2>
+                <table class="comentary">
+                    <tr id="4.2_comment">
+                        <td><a class="backlink" href="#4_block">↑</a> 4.2</td>
+                        <td>
+                            <p>
+                                Тандем Вакха и Венеры — общее место «Буранского сборника»: бог вина способствует тому, чтобы люди поклонялись богине любви [Долгорукова, Бабенко 2022: 154]. <br>
+                            </p>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr id="5.1_comment">
+                        <td><a class="backlink" href="#5_block">↑</a> 5.1<i> lenis </i></td>
+                        <td>
+                            <p>
+                                Здесь разворачивается метонимия вина: применительно к этому напитку слово «lenis» означает «мягкий, некрепкий», однако оно также может использоваться для описания человека и переводится обычно в таком случае как «мягкий, кроткий, спокойный» [Дворецкий 1976: 585], что создает амбивалентную трактовку — речь идет одновременно о добром, мягком боге и о легком вине. <br>
+                            </p>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr id="6.2_comment">
+                        <td><a class="backlink" href="#6_block">↑</a> 6.2<i> viro consentire </i></td>
+                        <td>
+                            <p>
+                                Имеется в виду согласие на интимную связь, что подтверждается следующей строфой, где встречаем слово «coitus» («половой акт»).<br>
+                            </p>
+                            <br>
+                        </td>
+                    </tr>
+                </table>
+                <h2>Библиография</h2>
+                <p class="bibliography">
+                    Бахтин 1990 — Бахтин М. М. Творчество Франсуа Рабле и народная культура средневековья и Ренессанса. М.: Художественная литература, 1990. 
+                </p>
+                <p class="bibliography">
+                    Дворецкий 1976 — Дворецкий И. Х. Латинско–русский словарь. М.: Русский язык, 1976. 
+                </p>
+                <p class="bibliography">
+                    Долгорукова, Бабенко 2022 — Долгорукова Н. М., Бабенко К. В. Церковь пьяниц: таверна в лирике вагантов // Литературный факт. 2022. № 3 (25). С. 142–162. 
+                </p>
+                <p class="bibliography">
+                    Bobeth 2015 — Bobeth G. Wine, women, and song? Reconsidering the «Carmina Burana» // Manuscripts and Medieval Song. Inscription, Performance, Context / Ed. by H. Deeming and E. E. Leach. Cambridge: Cambridge University Press, 2015. 
+                </p>
+                <p class="bibliography">
+                    Estreicher 2023 — Estreicher S. K. Wine and France: A Brief History // European Review. 2023. № 2 (31). P. 91–179. 
+                </p>
+                <p class="bibliography">
+                    Hilka, Schumann, Bischoff 1970 — Carmina Burana, mit Benutzung der Vorarbeiten Wilhelm Meyers: in 2 Bd. Bd 1.3: Die Trink- und Spielerlieder, Die geistlichen Dramen, Nachträge / Hg. von A. Hilka, O. Schumann und B. Bischoff. Heideilberg: Winter, 1970. 
+                </p>
+                <p class="bibliography">
+                    Rossell 2012 — Rossel A. La tradizione musicale della sestina di Arnaut Daniel. Lo ferm voler qu’el cor m’intra (BdT 29,14): un arte fatto lirico perfetto // Cognitive Philology. 2012. № 5. P. 1–22. 
+                </p>
+                <p class="bibliography">
+                    Traill 2018 — Carmina Burana: in 2 vols. Vol. 2 / Ed. and trans. by D. A. Traill. Cambridge: Harvard University Press, 2018. 
+                </p>
+                <p class="bibliography">
+                    Walsh 1976 — Walsh P. G. Thirty poems from the Carmina Burana. London: Bloomsbury Academic, 1976. 
+                </p>
+                <br><br>
+                <p>
+                    <i>Автор вступительной статьи, перевода и комментария М. Н. Пиховская.</i>
+                </p>
+                <p>
+                    <i>Исследование подготовлено при поддержке Факультета гуманитарных наук НИУ ВШЭ в 2024 г.</i>
+                </p>
+            </div>
+            <div>
+                <img class="hse-img" src="../styles/img/Logo_HSE_full_rus_for_dark/01_Logo_HSE_full_rus_CMYK_for_dark_1.svg">
+            </div>
+        </div>
+        <!-- JavaScripts -->
+        <script type="text/javascript" src="../js/script.js"></script>
+    </body>
+</html>
