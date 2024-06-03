@@ -14,7 +14,7 @@ from jinja2 import (Environment,
 def parse_text_number(docx: Document) -> int:
     for p in docx.paragraphs:
         try:
-            num = int(p.text)
+            num = int(p.text.removeprefix('CB'))
             return num
         except ValueError:
             continue
