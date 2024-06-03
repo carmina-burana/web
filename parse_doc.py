@@ -68,7 +68,7 @@ def parse_bib(docx: Document) -> List[str]:
     bibs = []
     for p in docx.paragraphs:
         if bib_section_start:
-            if 'авторывступительнойстатьи' in re.sub(r'\s', '', p.text.lower()):
+            if 'вступительнойстатьи,переводаикомментария' in re.sub(r'\s', '', p.text.lower()):
                 break
             if p.text:
                 bibs.append(p.text.strip())
@@ -81,7 +81,7 @@ def parse_footer(docx: Document) -> Tuple[str, str]:
     for p in docx.paragraphs:
         if names and year:
             break
-        if 'авторывступительнойстатьи' in re.sub(r'\s', '', p.text.lower()):
+        if 'вступительнойстатьи,переводаикомментария' in re.sub(r'\s', '', p.text.lower()):
             names = p.text
         elif 'исследованиеподготовленоприподдержке' in re.sub(r'\s', '', p.text.lower()):
             year = p.text
@@ -99,9 +99,10 @@ def parse_docx(file: Path) -> dict:
     data['bib'] = parse_bib(docx)
     data['names'], data['year'] = parse_footer(docx)
 
-    pprint([x.text for x in docx.paragraphs])
-
     return data
+
+def clean_html(html: str) -> str:
+    return re.sub(r'\n[ \t]*\n', '\n', html)
 
 def form_html(data: dict, out_file: Path, template_file: Path) -> None:
     template_parent = template_file.parent
@@ -109,20 +110,21 @@ def form_html(data: dict, out_file: Path, template_file: Path) -> None:
     template = env.get_template(template_file.name)
 
     with open(out_file, 'w', encoding='utf-8') as f:
-        f.write(template.render(data=data))
-    
+        html = template.render(data=data)
+        f.write(clean_html(html))
+
 def main():
     if len(sys.argv) < 2:
         print(f"Usage:\npython3 {sys.argv[0]} <input_file> <output_file>")
-        exit(1)
-
-    input_file, output_file = Path(sys.argv[1]), Path(sys.argv[2])
+        input_file, output_file = Path("/home/kesha/Downloads/Telegram Desktop/217 -.docx"), Path("texts/217.html")
+        #exit(1)
+    else:
+        input_file, output_file = Path(sys.argv[1]), Path(sys.argv[2])
     template_file = Path(__file__).parent.joinpath('templates/text.html')
     if not input_file.is_file():
         raise FileNotFoundError(f"File {input_file} does not exist")
 
     data = parse_docx(input_file)
-    #pprint(data)
     form_html(data, output_file, template_file)
     
 if __name__ == '__main__':
