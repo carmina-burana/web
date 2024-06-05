@@ -13,13 +13,6 @@ td {
     text-shadow: 7px 5px 6px #000;
 }
 
-.disabled {
-    color: gray!important;
-    pointer-events: none;
-    cursor: default;
-    text-decoration: none;
-}
-
 #textsdiv a {
     text-decoration: none;
 }
