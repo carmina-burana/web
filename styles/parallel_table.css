@@ -53,11 +53,6 @@ a {
     font-weight: bold;
 }
 
-.bibliography {
-    padding-left: 70px;
-    text-indent: -70px;
-}
-
 .image-box img {
     width: 70%;
     max-width: 500px;
